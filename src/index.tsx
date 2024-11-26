@@ -1,15 +1,14 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Lesson06 from './lessons/Lesson06';
+import Lesson06 from './lessons/lesson_06/Lesson06';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <>
-    <Lesson06 />
+    <Lesson06/>
   </>
 );
 
-reportWebVitals();
