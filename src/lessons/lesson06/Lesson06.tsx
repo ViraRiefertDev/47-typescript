@@ -129,7 +129,7 @@ const dog: Dog = {
 console.log(dog.sound());
 
 return (
-  <div>
+  <div className="lesson-container">
     <h2>Lesson 06</h2>
     <p>Все самое интересное в этом уроке происходит в теле компонента Lesson06 и в комментариях к коду</p>
   </div>
