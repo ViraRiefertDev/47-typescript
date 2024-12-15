@@ -1,4 +1,5 @@
-import './myButton.css';
+import styles from './myButton.module.css';
+import cn from 'classnames';
 
 //типизация для объекта props
 interface IButtonProps {
@@ -12,13 +13,16 @@ function MyButton({
   text,
   onClick = () => console.log('click'),
   type = 'button',
-  isPrimary = false,
+  isPrimary = true,
 }: IButtonProps) {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`myButton ${isPrimary ? 'primary' : ''}`}
+      /* className={`myButton ${isPrimary ? 'primary' : ''}`} */
+      //если значение isPrimary true имя ключа (primary) добавится в качестве строчного значения для класса
+      //если значение приходит из объекта styles через обращение по ключу - мы используем квадратные скобки
+      className={cn(styles.myButton, {[styles.primary]: isPrimary })}
     >
       {text}
     </button>

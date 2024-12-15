@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MyButton from "components/myButton/MyButton";
+import MyButton from "../../components/myButton/MyButton";
 
 function Lesson08() {
   const [count,setCount] = useState<number>(0)

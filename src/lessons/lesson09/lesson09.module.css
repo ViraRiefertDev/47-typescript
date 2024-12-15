@@ -1,0 +1,17 @@
+.desc {
+  margin: 0px 8px;
+  style:italic;
+}
+
+.importantDesc{
+  color:rgb(171, 79, 0);
+}
+
+.underlineDesc{
+  text-decoration: underline;
+}
+
+.boldDesc {
+  color: rgb(203,103,49);
+  font-weight: bold;
+}
